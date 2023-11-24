@@ -2,6 +2,13 @@
 # SPDX-License-Identifier: MPL-2.0
 
 terraform {
+  cloud {
+    organization = "zbari"
+
+    workspaces {
+      name = "zeeshan-bari"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
